@@ -21,7 +21,7 @@ local function nameOrSpeciesAndNumber(unit)
 end
 
 for k,v in ipairs(df.global.world.units.active) do
-	if dfhack.units.isCitizen(v) then
-		print(nameOrSpeciesAndNumber(v) .. ": ID=" .. v.id)
-	end
+    if dfhack.units.isCitizen(v) then
+        print(nameOrSpeciesAndNumber(v) .. ": ID=" .. v.id)
+    end
 end
