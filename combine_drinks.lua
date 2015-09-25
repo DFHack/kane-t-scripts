@@ -11,8 +11,8 @@ local stockpile = nil
 if args.stockpile then stockpile = df.building.find(tonumber(args.stockpile)) end
 
 local function itemsCompatible(item0, item1)
-    return item0:getType() == item1:getType() 
-        and item0.mat_type == item1.mat_type 
+    return item0:getType() == item1:getType()
+        and item0.mat_type == item1.mat_type
         and item0.mat_index == item1.mat_index
 end
 

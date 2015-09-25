@@ -14,8 +14,8 @@ local container = nil
 if args.container then container = df.item.find(tonumber(args.container)) end
 
 local function itemsCompatible(item0, item1)
-    return item0:getType() == item1:getType() 
-        and item0.mat_type == item1.mat_type 
+    return item0:getType() == item1:getType()
+        and item0.mat_type == item1.mat_type
         and item0.mat_index == item1.mat_index
 end
 
