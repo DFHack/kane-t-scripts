@@ -47,10 +47,10 @@ if item == nil and building == nil then
 
 else
     local rootItems;
-    if building then 
+    if building then
         rootItems = dfhack.buildings.getStockpileContents(building) 
     else 
-        rootItems = dfhack.items.getContainedItems(item) 
+        rootItems = dfhack.items.getContainedItems(item)
     end
 
     if #rootItems == 0 then

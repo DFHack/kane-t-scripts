@@ -23,9 +23,8 @@ local function getDrinks(items, drinks, index)
         -- Skip items currently tasked
         if #d.specific_refs == 0 then
 
-            if d:getType() == 68 then 
-                foundDrink = d 
-
+            if d:getType() == 68 then
+                foundDrink = d
             else
                 --print(d.id)
                 local containedItems = dfhack.items.getContainedItems(d)
